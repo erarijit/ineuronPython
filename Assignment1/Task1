@@ -7,3 +7,16 @@ for x in range(2000, 3200):
     if (x % 7 == 0) and (x % 5 != 0):
         numberList.append(str(x))
 print(','.join(numberList))
+
+#Q3
+fname = input("Input your First Name: ")
+lname = input("Input your Last Name: ")
+print("Hello  " + lname + " " + fname)
+
+
+#Q4
+Diam_cm = 12
+radius_cm = Diam_cm/2
+pie = 3.14
+Volume = (4/3 * pie * (radius_cm ** 3))
+print(Volume)
