@@ -13,3 +13,8 @@ for i in range(0, 9):
         for j in range(i, 9):
             print("*", end=" ")
         print("\n")
+        
+#Q3
+a = input("Enter text: ")
+print(a[::-1])
+
