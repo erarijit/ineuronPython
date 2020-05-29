@@ -1,1 +1,9 @@
+#Q1
+#I'm using VS Code
 
+#Q2
+numberList = []
+for x in range(2000, 3200):
+    if (x % 7 == 0) and (x % 5 != 0):
+        numberList.append(str(x))
+print(','.join(numberList))
