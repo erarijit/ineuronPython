@@ -18,3 +18,6 @@ for i in range(0, 9):
 a = input("Enter text: ")
 print(a[::-1])
 
+#Q4
+print(f"WE, THE PEOPLE OF INDIA,\n\thaving solemnly resolved to constitute India into a SOVEREIGN,!" +
+      "\n\t\tSOCIALIST, SECULAR, DEMOCRATIC REPUBLIC \n\t\t and to secure to all its citizens")
