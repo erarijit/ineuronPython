@@ -1,1 +1,15 @@
+#Q1
+number = input("Enter Variable:")
+list1_num = number.split(",")
+print(list1_num)
 
+#Q2
+for i in range(0, 9):
+    if(i <= 4):
+        for j in range(0, i+1):
+            print("*", end=" ")
+        print("\n")
+    else:
+        for j in range(i, 9):
+            print("*", end=" ")
+        print("\n")
