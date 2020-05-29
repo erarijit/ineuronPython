@@ -1,4 +1,3 @@
-
 def myreduce(fun, alist):
     x = alist[0]
     for i in range(1, len(alist)):
@@ -17,3 +16,38 @@ def Product(x1, x2):
 a = [1, 2, 3, 4, 5]
 print("Sum of all element in list a: ", myreduce(summ, a))
 print("Product of all elements in list a: ", myreduce(Product, a))
+
+
+def myfilter(fun, alist):
+    x = []
+    y = []
+
+    for i in alist:
+        x.append(fun(i))
+
+    for i in range(0, len(x)):
+        if x[i] == False:
+            continue
+        else:
+            y.append(x[i])
+
+    return y
+
+
+def multiple_five(i):
+    if i % 5 == 0:
+        return i
+
+    else:
+        return False
+
+
+def odd_number(i):
+    if i % 2 == 1:
+        return i
+    else:
+        return False
+
+
+print(myfilter(multiple_five, [2, 5, 6, 4, 10, 15, 12, 35, 124, 120]))
+print(myfilter(odd_number, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
